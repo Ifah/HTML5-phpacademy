@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		section{
+			border: 1px black solid;
+			width: 100%;
+			height: 150px;
+			text-indent: 10px;
+			padding-top: 5px;
+			font-family: Verdana, Geneva, sans-serif;
+		}
+	</style>
+	<title>Context Menus</title>
+	<menu type="context" id="menu">
+		<menuitem label="Refresh" onClick="window.location.reload();"></menuitem>
+		<menu label="Social Networks">
+			<menuitem label="Facebook"></menuitem>
+			<menuitem label="Google+"></menuitem>
+			<menuitem label="Twitter"></menuitem>
+		</menu>
+	</menu>
+</head>
+<body>
+	<section contextmenu="menu">
+		Here is some content for a context menu.
+		Works on Firefox only!!!
+	</section>
+</body>
+</html>
